@@ -1,20 +1,31 @@
 {
-  "data": [
-
-  {
-    "question": "What is 2 + 2",
-    "answer": "4",
-    "option": "5",
-    "option2": "7",
-    "option3": "3"
-  },
+  "posts": [
     {
-    "question": "What is 3 + 2",
-    "answer": "4",
-    "option": "5",
-    "option2": "7",
-    "option3": "3"
+      "id": 1,
+      "title": "Post 1"
+    },
+    {
+      "id": 2,
+      "title": "Post 2"
+    },
+    {
+      "id": 3,
+      "title": "Post 3"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
-
-]
 }
