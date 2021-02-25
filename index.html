@@ -30,41 +30,81 @@
   </nav>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container-fluid">
-      <div class="row">
+    <div class="row">
         <div class="col m5 s12">
-
-            <div class="col s12">
-                <div class="card-panel grey lighten-5 z-depth-1">
-                    <div class="row valign-wrapper">
-                        <div class="col s4">
-                            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--V0ekZaVJ--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/h68x0up43hmknl5tjcww.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                        </div>
-                        <div class="col s8">
-                            <div class="col s2 orange-text">
-                                <i class="material-icons dp48" style="padding-top: 10px;">location_on</i>
+            <div class="card-panel grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                    <div class="col s5 m4" style=" height: 235px; background-image: url('avatar.jpg'); background-size:cover; background-position: center; background-repeat: no-repeat; ">
+                        
+                    </div>
+                    <div class="col s7 m8">
+                        <div class="row" style="margin-top:10px">
+                            <div class="col s2  m1 orange-text">
+                                <i class="material-icons dp48" style="padding-top: 5px;">location_on</i>
                             </div>
-                            <div class="col s10">
+                            <div class="col s10 m11">
                                 <span class="black-text center-align">
                                     San Francisco, Panamá
                                 </span>
                             </div>
-                            <div class="col s2 orange-text">
-                                <i class="material-icons dp48" style="padding-top: 10px;">perm_phone_msg</i>
+                        </div>
+                        <div class="row">
+                            <div class="col s2 m1 orange-text">
+                                <i class="material-icons dp48" style="padding-top: 5px;">perm_phone_msg</i>
                             </div>
-                            <div class="col s10" style="padding-top: 10px;">
+                            <div class="col s10 m11" style="padding-top: 5px;">
                                 <span class="black-text center-align">
                                     +507 62153462
                                 </span>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col s2 m1 orange-text">
+                                <i class="material-icons dp48" style="padding-top: 5px;">cake</i>
+                            </div>
+                            <div class="col s10 m11" style="padding-top: 10px;">
+                                <span class="black-text center-align">
+                                    March 10 1987
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s2 m1 orange-text">
+                                <i class="material-icons dp48" style="padding-top: 5px;">email</i>
+                            </div>
+                            <div class="col s10 m11" style="padding-top: 5px;">
+                                <span class="black-text center-align">
+                                    antojrd@gmail.com
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="row valign-wrapper">
+                    <blockquote>
+                        Apply my skills and knowledge in the informatic area for the prompt and efficient resolution of problems, 
+                        using top of the line standard and agile development methodologies 
+                        in order to increase company productivity, performance and profitability.
+                    </blockquote>
 
+                </div>
+            </div>
         </div>
-        <div class="col m7 s12 indigo darken-4">
-            6-columns (one-half)
-        </div>
+        <div class="col m7 s12 card-panel grey lighten-5 z-depth-1">
+           <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1">Test 1</a></li>
+        <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+        <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+        <li class="tab col s3"><a href="#test4">Test 4</a></li>
+      </ul>
+    </div>
+    <div id="test1" class="col s12">Test 1</div>
+    <div id="test2" class="col s12">Test 2</div>
+    <div id="test3" class="col s12">Test 3</div>
+    <div id="test4" class="col s12">Test 4</div>
+  </div>
         </div>
     </div>
   </div>
@@ -74,8 +114,10 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
+            var navs = document.querySelectorAll('.sidenav');
+            var tabs = document.querySelectorAll('.tabs');
+            var navInstances = M.Sidenav.init(navs);
+            var tabInstance = M.Tabs.init(tabs);
         });
     </script>
   </body>
